@@ -9,47 +9,64 @@
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
-    /* text-align: center; */
+    text-align: center;
+   
   }
 
   /* styles container*/
 
   .background{
-    background-image: url(../assets/image/fondo1xs.png);
+    
     background-repeat: no-repeat;
-	  background-size: cover;
-	/* background-attachment: fixed; */
+    background-size: cover;
+  }
+  /* mobil  default */
+  .image {
+    background-image: url(../assets/image/fondo1xs.png);
   }
 
   .mobilexs{
     display: inline-block;
+    text-align: center;
+    padding-top: 25%; 
   }
-
 
   .tabletsm, .desktopmd{
     display: none;
   }
 
+        /* tablet */
   @media (min-width: 768px) {
   .background {
-    background-image: url(../assets/image/fondo2smtgf.jpg);
+    background-image: url(../assets/image/fondo2sm.jpg);
     }
+
   .mobilexs, .desktopmd{
     display: none;
     }
+  /* .fondo1xs, .fondo3md{
+    display: none;
+    } */
   .tabletsm {
     display: inline-block;
+    text-align: center;
+    padding-top: 25%;
     }
   }
 
+        /* desktop */
   @media (min-width: 992px) { 
     .background {
       background-image: url(../assets/image/fondo3md.jpg);
     }
+
     .mobilexs, .tabletsm{
       display: none;
     }
-    .desktop {
+    
+    .desktopmd  {
       display: inline-block;
+      text-align: center;
+      padding-top: 25%; 
     }
  }
