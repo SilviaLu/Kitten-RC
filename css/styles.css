@@ -1,0 +1,55 @@
+/* styles reusables */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    /* text-align: center; */
+  }
+
+  /* styles container*/
+
+  .background{
+    background-image: url(../assets/image/fondo1xs.png);
+    background-repeat: no-repeat;
+	  background-size: cover;
+	/* background-attachment: fixed; */
+  }
+
+  .mobilexs{
+    display: inline-block;
+  }
+
+
+  .tabletsm, .desktopmd{
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+  .background {
+    background-image: url(../assets/image/fondo2smtgf.jpg);
+    }
+  .mobilexs, .desktopmd{
+    display: none;
+    }
+  .tabletsm {
+    display: inline-block;
+    }
+  }
+
+  @media (min-width: 992px) { 
+    .background {
+      background-image: url(../assets/image/fondo3md.jpg);
+    }
+    .mobilexs, .tabletsm{
+      display: none;
+    }
+    .desktop {
+      display: inline-block;
+    }
+ }
